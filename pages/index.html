@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Integral</title>
+    <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Proyecto de Cálculo de Integral por Regla del Trapecio</h1>
+        <p>Elaborado por:</p>
+        <p><strong>Jersain Felipe Vázquez Badillo</strong></p>
+        <p><strong>Ramirez Beltran Gerardo Antonio</strong></p>
+        <p><strong>Yolanda Salas Calixto</strong></p>
+        <button onclick="document.getElementById('formulario').style.display='block'; this.style.display='none'">Ingresar</button>
+
+        <div id="formulario" style="display:none;">
+            <h2>Calculadora de Integral</h2>
+            <form action="/api/calcular" method="POST">
+                <!-- Inputs para ingresar los datos necesarios -->
+                <label for="a">Límite inferior (a):</label>
+                <input type="number" name="a" step="any" required><br>
+                <label for="b">Límite superior (b):</label>
+                <input type="number" name="b" step="any" required><br>
+                <label for="functionInput">Función f(x):</label>
+                <input type="text" name="functionInput" required><br>
+                <label for="n">Número de subintervalos (n):</label>
+                <input type="number" name="n" step="1" required><br>
+                <button type="submit">Calcular</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "api/calcular.js", "use": "@vercel/node" },
+      { "src": "public/styles.css", "use": "@vercel/static" }
+    ],
+    "routes": [
+      { "src": "/api/calcular", "dest": "api/calcular.js" },
+      { "src": "/(.*)", "dest": "pages/index.html" }
+    ]
+  }
