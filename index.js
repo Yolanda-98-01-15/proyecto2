@@ -2,7 +2,7 @@
 const express = require('express'); // Framework para crear el servidor
 const math = require('mathjs'); // Librería para cálculos matemáticos avanzados
 const app = express(); // Crear una instancia de la aplicación Express
-const port = 3000; // Puerto en el que se ejecutará el servidor
+const port = process.env.PORT || 3000; // Puerto en el que se ejecutará el servidor
 
 // Configuración para servir archivos estáticos (por ejemplo, CSS)
 app.use(express.static(__dirname));
