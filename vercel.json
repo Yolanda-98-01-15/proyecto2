@@ -1,11 +1,22 @@
+on, asegúrate de que está configurado correctamente para manejar las funciones de la API, por ejemplo:
+json
+Copiar código
 {
-    "version": 2,
-    "builds": [
-      { "src": "api/calcular.js", "use": "@vercel/node" },
-      { "src": "public/styles.css", "use": "@vercel/static" }
-    ],
-    "routes": [
-      { "src": "/api/calcular", "dest": "api/calcular.js" },
-      { "src": "/(.*)", "dest": "pages/index.html" }
-    ]
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/calcular.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/calcular",
+      "dest": "/api/calcular.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
