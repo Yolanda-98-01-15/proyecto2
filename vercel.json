@@ -1,6 +1,3 @@
-on, asegúrate de que está configurado correctamente para manejar las funciones de la API, por ejemplo:
-json
-Copiar código
 {
   "version": 2,
   "builds": [
