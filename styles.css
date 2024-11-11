@@ -1,0 +1,114 @@
+/* Estilos generales del cuerpo */
+body {
+    /* Configuración de fuente y fondo */
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    /* Alineación y diseño centrado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura de la ventana del navegador */
+    margin: 0; /* Eliminar márgenes predeterminados */
+}
+
+/* Estilo del contenedor principal */
+.container {
+    /* Fondo blanco y bordes redondeados */
+    background-color: #ffffff;
+    border-radius: 8px;
+    /* Sombra para un efecto elevado */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Espaciado interno */
+    max-width: 400px; /* Ancho máximo del contenedor */
+    text-align: center; /* Centrar texto */
+}
+
+/* Estilo de los encabezados */
+h1 {
+    /* Color del texto */
+    color: #333;
+}
+
+/* Estilo de las etiquetas del formulario */
+form label {
+    /* Resaltar el texto */
+    font-weight: bold;
+    color: #555;
+    /* Asegurar que cada etiqueta esté en su línea */
+    display: block;
+    margin-top: 10px;
+}
+
+/* Estilo de los campos de entrada */
+form input {
+    /* Configuración de tamaño y espaciado */
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    /* Bordes simples y redondeados */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Estilo de los botones */
+button {
+    /* Fondo y texto del botón */
+    background-color: #007bff;
+    color: white;
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+button:hover {
+    /* Cambiar a un tono más oscuro */
+    background-color: #0056b3;
+}
+
+/* Estilo de los párrafos */
+p {
+    /* Tamaño y color del texto */
+    font-size: 18px;
+    color: #333;
+}
+
+/* Estilo de la sección de portada */
+.portada {
+    /* Separar la portada de otras secciones */
+    margin-bottom: 20px;
+}
+
+/* Estilo del título dentro de la portada */
+.portada h1 {
+    /* Color y tamaño de fuente */
+    color: #007bff;
+    font-size: 24px;
+}
+
+/* Estilo del texto descriptivo en la portada */
+.portada p {
+    /* Tamaño y color del texto */
+    font-size: 18px;
+    color: #555;
+}
+
+/* Estilo de la fórmula que se muestra en la esquina */
+.formula {
+    /* Posición absoluta en la esquina superior derecha */
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Cambiar a left: 20px para mover a la esquina izquierda */
+    /* Fondo azul y texto blanco */
+    background-color: #007bff;
+    color: white;
+    /* Espaciado interno y bordes redondeados */
+    padding: 10px;
+    border-radius: 5px;
+    /* Tamaño de fuente */
+    font-size: 14px;
+    /* Sombra para dar relieve */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
